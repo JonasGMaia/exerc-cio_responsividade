@@ -1,0 +1,473 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style: none;
+}
+
+.container main{
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    border-bottom: solid 3px;
+    width: 100%;
+}
+
+header .container{
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.button_menu{
+    display: none;
+}
+
+header img{
+    max-height: 2em;
+}
+
+.form form{
+    display: flex;
+    align-items: center;
+    border:  solid 2px;
+    border-radius: 15px;
+    padding-inline: 10px;
+    background-color: rgba(128, 128, 128, 0.11);
+}
+
+.form input{
+    min-height: 3em;
+    width: 100%;
+    border: none;
+    background-color: rgba(0,0,0,0);
+}
+
+input:focus{
+    outline: none;
+}
+
+header form button{
+    border: none;
+}
+
+.menu_header ul{
+    display: flex;
+}
+
+.menu_header li a{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.nameANDpricetag h5{
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.nameANDpricetag h5:hover{
+    overflow:visible;
+    text-overflow: ellipsis;
+    white-space:inherit;
+}
+
+h4{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+}
+
+h5{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+.nameANDpricetag h4{
+    opacity: 50%;
+    padding: 0px;
+}
+
+h2{
+    padding: 30px 0px 10px 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+main{
+    padding: 10px 0px;
+}
+
+#shopNow{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#aboutUs{
+    width: 100%;
+    margin: 70px 0px;
+}
+
+.aboutUsimg {
+    height: 400px;
+    overflow: hidden; 
+    position: relative;
+}
+
+
+.aboutUsimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:center;
+}
+
+.about_us{
+    min-width: 100%;
+}
+
+.about_us_text{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about_us_text p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.product_list{
+    display: grid;
+    padding: 15px 0px;
+    width: 100%;
+    grid-template-columns: repeat(4,22%);
+    column-gap: 4%;
+    row-gap: 5%;
+}
+
+.more_button{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-inline: 45%;
+}
+
+.more_button button{
+    position:relative;
+    width: 5em;
+    height: 2em;
+    font-size: 0.8em;
+    border: solid 1px;
+    background: none;
+    padding: 5px 9px;
+    
+}
+
+
+.product img:hover{
+    filter:brightness(120%);
+    width: 110%;
+}
+
+
+.product_list img{
+    width: 100%;
+}
+
+.product button{
+    border: solid 1px;
+    background: none;
+    padding: 5px 9px;
+    margin-top: 9px;
+}
+
+
+
+footer{
+    width: 100%;
+    border-top: solid 3px;
+}
+
+footer nav{
+    padding: 20px 0;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+}
+
+.menu_footer{
+    display: grid;
+    grid-template-columns: repeat(3,22%);
+    column-gap: 20%;
+    row-gap: 25%;
+}
+
+#socials{
+    display: flex;
+    padding-top: 100px;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#socials img{
+    max-height: 0.8em;
+}
+
+#socials li{
+    padding: 0px 10px
+}
+
+.copyright{
+    padding: 100px 0px 10px 0px;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width:640px){
+
+    header{
+        border-bottom: solid 3px;
+        width: 100%;
+    }
+
+    header .container{
+        display: grid;
+        padding:15px 20px;
+        border-bottom: solid 3px;
+        width: 100%;
+        justify-items: center;
+    }
+
+    .title{
+        display: flex;
+        justify-content: space-between;
+        min-width: 330px;
+        padding-inline: 2%;
+    }
+
+    .button_menu{
+        display: block;
+        padding: 0px;
+    }
+
+    .button_menu button{
+        display: block;
+        border:none;
+        background-color: rgba(0,0,0,0);
+        font-size: 2em;
+    }
+
+
+    .menuBar{
+        background-color: black;
+        width: 50px;
+        height: 5px;
+        margin:5px 0px;
+    }
+
+    
+    
+    .form, header nav{ 
+        display: none;
+        margin-top:20px;
+        width: 100%;
+    }
+
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu_header ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container main{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #shopNow{
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px 30px;
+        
+    }
+
+    .product_list img{
+        width: 100%;
+    }
+
+
+    .product_list{
+        display: block;
+        width: 100%;
+    }
+
+    .product{
+        padding: 20px 0px;
+    }
+
+    .more_button{
+        width: 100%;
+        margin: 0 auto;
+        padding-inline: 40%;
+    }
+    
+    .more_button button{
+        width: 5.5em;
+        height: 2.5em;
+        font-size: 0.9em;
+        border: solid 1px;
+        background: none;
+        padding: 5px 9px;
+        left:0px;
+    }
+
+    .about_us {
+        padding-inline: 30px;
+        width: 100%;
+    }
+
+    footer nav{
+        padding: 10%;
+        width: 100%;
+    }
+
+    .menu_footer{
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        padding-inline: 20%;
+        justify-items: center;
+        row-gap: 5%;
+    }
+
+    #socials{
+        display: flex;
+        padding: 10% 20%;
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .copyright{
+        padding: 1% 25%;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    
+    header{
+        border-bottom: solid 3px;
+        width: 100%;
+    }
+
+    header .container{
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        padding-inline: 5%;
+        justify-items: center;
+    }
+    
+    #aboutUs{
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        row-gap: 5%;
+        padding-inline: 10%;
+        width: 100%;
+    }
+
+    #aboutUs img{
+        width: 100%;
+    }
+
+    .about_us {
+        padding: 10px 0;
+    }
+
+    #shopNow{
+        padding-inline: 10%;
+    }
+
+    .more_button{
+        width: 100%;
+        margin: 0 auto;
+        padding-inline: 40%;
+        padding-top: 20%;
+    }
+    
+    .more_button button{
+        width: 5.5em;
+        height: 2.5em;
+        font-size: 0.9em;
+        border: solid 1px;
+        background: none;
+        padding: 5px 9px;
+    }
+
+    .product_list{
+        display: grid;
+        grid-template-columns: repeat(2,48%);
+        column-gap: 5%;
+        row-gap: 5%;
+    }
+
+    footer{
+        padding-inline: 10%;
+    }
+
+    #aboutUs{
+        width: 100%;
+        margin: 70px 0px;
+    }
+    
+    .aboutUsimg {
+        height: 400px;
+        overflow: hidden; 
+        position: relative;
+    }
+    
+    
+    .aboutUsimg img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position:center;
+    }
+    
+    .about_us{
+        min-width: 100%;
+    }
+}
